@@ -27,6 +27,18 @@ const ContentStyles = styled.div`
     line-height: 27px;
     text-align: center;
   }
+  button {
+    background-color: var(--main);
+    color: var(--white);
+    padding: 0.75rem;
+    border-radius: 50px;
+  }
+  //TODO fix hover style for contact button and active state for nav links.
+
+  .buttonP {
+    display: flex;
+    justify-content: start;
+  }
 `;
 
 export default function About() {
@@ -48,14 +60,28 @@ export default function About() {
         <div className="container">
           <p>
             Hello my name is Daniel Osornio I am a Full-Stack developer from
-            Salt Lake City, Utah.
+            Salt Lake City, Utah 🏔️
           </p>
           <p>
             I recently graduated from a Coding boot-camp ran through the
-            University of Utah where we learned the MERN stack. I really enjoyed
-            my time here I really pushed my self to the edge which is needed to
-            succeed in any field. I really like learning new things which is one
-            of the reasons I decided to pursue being a developer.
+            University of Utah where we learned the MERN stack.💥 I really
+            enjoyed my time here I really pushed my self to the edge which is
+            needed to succeed in any field. I really like learning new things
+            which is one of the reasons I decided to pursue being a developer
+            💻.
+          </p>
+          <p>
+            In my spare time when i'm not hacking away I enjoy staying active at
+            the gym 🏋️ or hanging out with family and friends 👪
+          </p>
+          <p>
+            I am currently looking for work am open to freelance and open source
+            as well. Any way to improve my code and design skills with real
+            world applications.
+          </p>
+
+          <p className="buttonP">
+            <button>Contact me</button>
           </p>
         </div>
       </ContentStyles>
