@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --grey: #b3b3b3;
     --fontFamily: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
+    --siteWidth: 77ch;
 }
 
 html,body {

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
-//TODO figure out how to style a link tag
+
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
   ul {
