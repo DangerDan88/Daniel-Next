@@ -2,24 +2,38 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
-
+//TODO figure out how to style a link tag
 const NavStyles = styled.nav`
+  font-family: var(--fontFamily);
   ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     padding: 10px 15px;
     max-width: 1000px;
   }
+  a {
+    list-style: none;
+    color: var(--grey);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--white);
+  }
+  a:active {
+    box-shadow: 0 2px 0 var(--main);
+    opacity: 1;
+  }
+
   .port {
     border-radius: 9999px;
   }
 `;
 
-export default function NavBar() {
+export default function NavBar({ href, name }) {
   return (
     <NavStyles>
       <ul>
@@ -27,14 +41,20 @@ export default function NavBar() {
           <Image
             src="/images/portpic.jpeg"
             alt="port pic"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="port"
           />
         </li>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/wiad">WIAD</Link>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+        <Link href="/random">
+          <a>Random</a>
+        </Link>
       </ul>
     </NavStyles>
   );

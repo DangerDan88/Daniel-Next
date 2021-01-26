@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Head>
@@ -8,11 +8,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {" "}
-        <h1>Welcome to my portfolio</h1>
+        <h1>random facts page</h1>
       </main>
-
-      <footer>footer</footer>
     </div>
   );
 }
