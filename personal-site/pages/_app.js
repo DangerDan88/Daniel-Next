@@ -3,7 +3,8 @@ import NavBar from "../components/NavBar";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-    --main: #39e600;
+    --main: #e68a00;
+    --mainActive: #b3613b;
     --black: #161515;
     --white: #fff;
     --grey: #b3b3b3;

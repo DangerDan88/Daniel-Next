@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainPageStyles>
-        <h1>Welcome to my portfolio</h1>
+        <h1>Welcome, My name is Daniel.</h1>
       </MainPageStyles>
 
       <footer>footer</footer>

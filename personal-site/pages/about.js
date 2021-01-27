@@ -27,17 +27,31 @@ const ContentStyles = styled.div`
     line-height: 27px;
     text-align: center;
   }
-  button {
-    background-color: var(--main);
-    color: var(--white);
-    padding: 0.75rem;
-    border-radius: 50px;
-  }
-  //TODO fix hover style for contact button and active state for nav links.
 
+  //TODO fix hover style for contact button and active state for nav links.
   .buttonP {
     display: flex;
     justify-content: start;
+  }
+`;
+
+const ButtonStyles = styled.button`
+  background-color: var(--main);
+  color: var(--white);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 50px;
+  border-color: var(--main);
+  font-size: 17px;
+  font-weight: 500;
+  &:hover {
+    background-color: var(--mainActive);
+    opacity: 1;
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+  a {
+    color: var(--white);
+    text-decoration: none;
   }
 `;
 
@@ -81,7 +95,9 @@ export default function About() {
           </p>
 
           <p className="buttonP">
-            <button>Contact me</button>
+            <ButtonStyles>
+              <a href="mailto:dangerdan808@gmail.com">Contact me</a>
+            </ButtonStyles>
           </p>
         </div>
       </ContentStyles>
