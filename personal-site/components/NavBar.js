@@ -19,13 +19,14 @@ const NavStyles = styled.nav`
     list-style: none;
     color: var(--grey);
     text-decoration: none;
+    //TODO fix hover style active state for nav links next doesnt read active state from anchor tag need to use next/router i think and figure out footer for every page
+    &:active {
+      box-shadow: 0 2px 0 var(--main);
+      opacity: 1;
+    }
   }
   a:hover {
     color: var(--white);
-  }
-  a:active {
-    box-shadow: 0 2px 0 var(--main);
-    opacity: 1;
   }
 
   .port {

@@ -28,7 +28,6 @@ const ContentStyles = styled.div`
     text-align: center;
   }
 
-  //TODO fix hover style for contact button and active state for nav links.
   .buttonP {
     display: flex;
     justify-content: start;
@@ -43,6 +42,7 @@ const ButtonStyles = styled.button`
   border-radius: 50px;
   border-color: var(--main);
   font-size: 17px;
+  line-height: 27px;
   font-weight: 500;
   &:hover {
     background-color: var(--mainActive);
