@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
 
 const MainHeadingStyles = styled.div`
   display: flex;
@@ -50,6 +51,15 @@ const ButtonStyles = styled.button`
     text-decoration: none;
   }
 `;
+
+const ProjectContainerStyles = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: var(--siteWidth);
+  margin: 0 auto;
+  padding: 0 15px;
+`;
+
 export default function Home() {
   return (
     <div>
@@ -72,7 +82,15 @@ export default function Home() {
           <Link href="/about">More about me</Link>
         </ButtonStyles>
       </ButtonDiv>
-
+      Projects
+      <ProjectContainerStyles>
+        <Image
+          src="/images/macsketch.png"
+          alt="Picture of macbook"
+          width={500}
+          height={500}
+        />
+      </ProjectContainerStyles>
       <footer>footer</footer>
     </div>
   );
