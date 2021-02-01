@@ -16,10 +16,12 @@ const MainHeadingStyles = styled.div`
   justify-content: center;
   max-width: var(--siteWidth);
   margin: 0 auto;
-  padding: 0 15px;
   font-weight: bold;
   font-size: 2rem;
   padding-bottom: 2rem;
+  padding-right: 16rem;
+  padding-top: 8rem;
+  color: var(--grey);
 `;
 
 const MainProjectTextStyles = styled.div`
@@ -39,7 +41,7 @@ const MainProjectTextStyles = styled.div`
 const ProjectLinkStyle = styled.a`
   a {
     list-style: none;
-    color: var(--grey);
+    color: var(--main);
     text-decoration: none;
     //TODO fix hover style active state for nav links next doesnt read active state from anchor tag need to use next/router i think and figure out footer for every page
     &:active {
@@ -48,10 +50,10 @@ const ProjectLinkStyle = styled.a`
     }
   }
   a:hover {
-    color: var(--white);
+    color: var(--mainActive);
   }
 `;
-//TODO fix project description styles
+
 export default function Projects() {
   return (
     <div>
@@ -60,8 +62,8 @@ export default function Projects() {
         <Image
           src="/images/macsketch.png"
           alt="Picture of the author"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
         />
       </ProjectImageContainerStyles>
       <MainProjectTextStyles>
@@ -72,7 +74,9 @@ export default function Projects() {
       </MainProjectTextStyles>
       <MainProjectTextStyles>
         <ProjectLinkStyle>
-          <a>https://gphequestrian.com/</a>
+          <a href="https://gphequestrian.com/" target="_blank">
+            Visit Gphequestrian.com
+          </a>
         </ProjectLinkStyle>
       </MainProjectTextStyles>
     </div>

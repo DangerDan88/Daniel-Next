@@ -16,7 +16,6 @@ const MainTextStyles = styled.div`
   justify-content: start;
   max-width: var(--siteWidth);
   margin: 0 auto;
-  padding: 0 15px;
   p {
     font-weight: 500;
     font-size: 17px;
@@ -25,18 +24,13 @@ const MainTextStyles = styled.div`
     color: var(--grey);
   }
 `;
-//TODO fix button div and get laptop and phone screenshot and put together on sketch
-const ButtonDiv = styled.p`
-  display: flex;
-  justify-content: start;
-`;
 
 const ButtonStyles = styled.button`
   background-color: var(--main);
   color: var(--white);
   padding: 0.75rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   border-color: var(--main);
   font-size: 17px;
   line-height: 27px;
@@ -69,11 +63,11 @@ export default function Home() {
           learning.
         </p>
       </MainTextStyles>
-      <ButtonDiv>
+      <MainTextStyles>
         <ButtonStyles>
           <Link href="/about">More about me</Link>
         </ButtonStyles>
-      </ButtonDiv>
+      </MainTextStyles>
       <Projects />
       <footer>make footer component</footer>
     </div>
