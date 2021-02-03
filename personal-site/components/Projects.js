@@ -9,6 +9,10 @@ const ProjectImageContainerStyles = styled.div`
   max-width: var(--siteWidth);
   margin: 0 auto;
   padding: 0 15px;
+  padding-top: 2rem;
+  img {
+    border-radius: 25px;
+  }
 `;
 
 const MainHeadingStyles = styled.div`
@@ -76,6 +80,30 @@ export default function Projects() {
         <ProjectLinkStyle>
           <a href="https://gphequestrian.com/" target="_blank">
             Visit Gphequestrian.com
+          </a>
+        </ProjectLinkStyle>
+      </MainProjectTextStyles>
+      <ProjectImageContainerStyles>
+        <Image
+          src="/images/macsketch2.png"
+          alt="Picture of the author"
+          width={400}
+          height={400}
+        />
+      </ProjectImageContainerStyles>
+      <MainProjectTextStyles>
+        <h1>LearnBuildType</h1>
+      </MainProjectTextStyles>
+      <MainProjectTextStyles>
+        <p>
+          created using React, Serverless functions and Styled Components with
+          Auth0
+        </p>
+      </MainProjectTextStyles>
+      <MainProjectTextStyles>
+        <ProjectLinkStyle>
+          <a href="https://elated-torvalds-247cb0.netlify.app/" target="_blank">
+            Visit LearnBuildType
           </a>
         </ProjectLinkStyle>
       </MainProjectTextStyles>
