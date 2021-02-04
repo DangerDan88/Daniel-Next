@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }) {
       <GlobalStyles />
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

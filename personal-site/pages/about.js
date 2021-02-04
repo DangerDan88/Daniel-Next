@@ -6,6 +6,9 @@ const ImageStyles = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  img {
+    border-radius: 25px;
+  }
 `;
 
 const ContentStyles = styled.div`
@@ -66,8 +69,8 @@ export default function About() {
         <Image
           src="/images/portpic.jpeg"
           alt="port pic"
-          height={200}
-          width={200}
+          height={300}
+          width={300}
         />
       </ImageStyles>
       <ContentStyles>

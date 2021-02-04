@@ -69,7 +69,6 @@ export default function Home() {
         </ButtonStyles>
       </MainTextStyles>
       <Projects />
-      <footer>make footer component</footer>
     </div>
   );
 }
