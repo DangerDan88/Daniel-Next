@@ -11,8 +11,20 @@ const FooterContainer = styled.footer`
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    // padding: 10px 15px;
     max-width: 1000px;
+  }
+  a {
+    list-style: none;
+    color: var(--grey);
+    text-decoration: none;
+    //TODO fix hover style active state for nav links next doesnt read active state from anchor tag need to use next/router i think and figure out footer for every page
+    &:active {
+      box-shadow: 0 2px 0 var(--main);
+      opacity: 1;
+    }
+  }
+  a:hover {
+    color: var(--white);
   }
 `;
 
@@ -20,7 +32,19 @@ export default function Footer() {
   return (
     <FooterContainer>
       <ul>
-        <li>Github</li> <li>LinkedIn</li> <li>Twitter</li>
+        <li>
+          <a href="https://github.com/DangerDan88">Github</a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-osornio-837547188/">
+            LinkedIn
+          </a>
+        </li>
+
+        <li>
+          <a href="#">Twitter</a>
+        </li>
       </ul>
     </FooterContainer>
   );
