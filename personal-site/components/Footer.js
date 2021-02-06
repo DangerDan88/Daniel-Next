@@ -45,6 +45,9 @@ export default function Footer() {
         <li>
           <a href="#">Twitter</a>
         </li>
+        <li>
+          <a href="mailto:dangerdan808@gmail.com">Contact</a>
+        </li>
       </ul>
     </FooterContainer>
   );
