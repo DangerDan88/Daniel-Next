@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { ThemeProvider } from "styled-components";
+import useTheme from "../components/hooks/useTheme";
+import { lightTheme, darkTheme } from "../styles/Theme";
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -24,12 +27,17 @@ html,body {
 `;
 
 function MyApp({ Component, pageProps }) {
+  const [theme, toggleTheme] = useTheme();
+  const currentTheme = theme === "light" ? lightTheme : darkTheme;
+
   return (
     <>
-      <GlobalStyles />
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
+      <ThemeProvider theme={currentTheme}>
+        <GlobalStyles />
+        <NavBar toggleTheme={toggleTheme} />
+        <Component {...pageProps} />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
+//import useTheme from "../components/hooks/useTheme";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
@@ -34,7 +35,7 @@ const NavStyles = styled.nav`
   }
 `;
 
-export default function NavBar({ href, name }) {
+export default function NavBar({ href, name, toggleTheme }) {
   return (
     <NavStyles>
       <ul>
@@ -56,6 +57,9 @@ export default function NavBar({ href, name }) {
         <Link href="/random">
           <a>Random</a>
         </Link>
+        <li>
+          <button onClick={toggleTheme}>Toggle Theme</button>
+        </li>
       </ul>
     </NavStyles>
   );
