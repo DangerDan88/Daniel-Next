@@ -38,7 +38,7 @@ const ContentStyles = styled.div`
 `;
 
 const ButtonStyles = styled.button`
-  background-color: var(--main);
+  background-color: var(--black);
   color: var(--white);
   padding: 0.75rem;
   border: none;

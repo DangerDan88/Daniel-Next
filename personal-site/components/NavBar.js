@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
+  background-color: #290066;
   ul {
     list-style: none;
     display: flex;

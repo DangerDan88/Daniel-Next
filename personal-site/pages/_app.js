@@ -7,7 +7,7 @@ import { lightTheme, darkTheme } from "../styles/Theme";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-    --main: #e68a00;
+    --main: #1f004d;
     --mainActive: #b3613b;
     --black: #161515;
     --white: #fff;
@@ -15,12 +15,13 @@ const GlobalStyles = createGlobalStyle`
     --fontFamily: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
     --siteWidth: 77ch;
+    --accent-color:  #e16365;
 }
 
 html,body {
     margin: 0;
     padding: 0;
-    background-color: var(--black);
+    background-color: var(--main);
     font-family: var(--fontFamily);
     color: var(--white);
 }
