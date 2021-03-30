@@ -6,7 +6,12 @@ import Image from "next/image";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
-  background-color: #290066;
+  background-image: linear-gradient(
+    to right,
+    rgb(18, 194, 233),
+    rgb(196, 113, 237),
+    rgb(246, 79, 89)
+  );
   ul {
     list-style: none;
     display: flex;
@@ -21,7 +26,7 @@ const NavStyles = styled.nav`
     list-style: none;
     color: var(--grey);
     text-decoration: none;
-    //TODO fix hover style active state for nav links next doesnt read active state from anchor tag need to use next/router i think and figure out footer for every page
+    font-size: x-large;
     &:active {
       box-shadow: 0 2px 0 var(--main);
       opacity: 1;
@@ -55,12 +60,6 @@ export default function NavBar({ href, name, toggleTheme }) {
         <Link href="/about">
           <a>About</a>
         </Link>
-        <Link href="/random">
-          <a>Random</a>
-        </Link>
-        <li>
-          <button onClick={toggleTheme}>Toggle Theme</button>
-        </li>
       </ul>
     </NavStyles>
   );

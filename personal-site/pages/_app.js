@@ -21,10 +21,10 @@ const GlobalStyles = createGlobalStyle`
 html,body {
     margin: 0;
     padding: 0;
-    background-color: var(--main);
+    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
     font-family: var(--fontFamily);
     color: var(--white);
-}
+} 
 `;
 
 function MyApp({ Component, pageProps }) {

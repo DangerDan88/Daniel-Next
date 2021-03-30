@@ -21,10 +21,9 @@ const MainTextStyles = styled.div`
     font-size: 17px;
     line-height: 27px;
     text-align: center;
-    color: var(--grey);
+    color: var(--white);
   }
 `;
-
 const ButtonStyles = styled.button`
   background-color: var(--black);
   color: var(--white);
@@ -46,11 +45,6 @@ const ButtonStyles = styled.button`
   }
 `;
 
-const SkewedDiv = styled.div`
-  transform: skew(10deg, 10deg);
-  background-color: #290066;
-`;
-
 export default function Home() {
   return (
     <div>
@@ -68,7 +62,6 @@ export default function Home() {
           learning.
         </p>
       </MainTextStyles>
-      <SkewedDiv className="skew">content here</SkewedDiv>
       <MainTextStyles>
         <ButtonStyles>
           <Link href="/about">More about me</Link>
