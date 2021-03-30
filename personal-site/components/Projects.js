@@ -23,9 +23,8 @@ const MainHeadingStyles = styled.div`
   font-weight: bold;
   font-size: 2rem;
   padding-bottom: 2rem;
-  padding-right: 16rem;
   padding-top: 8rem;
-  color: var(--grey);
+  color: var(--white);
 `;
 
 const MainProjectTextStyles = styled.div`
