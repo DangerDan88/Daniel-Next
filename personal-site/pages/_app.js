@@ -8,7 +8,7 @@ import { lightTheme, darkTheme } from "../styles/Theme";
 const GlobalStyles = createGlobalStyle`
 :root {
     --main: #1f004d;
-    --mainActive: #b3613b;
+    --mainActive: #99b3ff;
     --black: #161515;
     --white: #fff;
     --grey: #b3b3b3;

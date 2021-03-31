@@ -37,7 +37,7 @@ const MainProjectTextStyles = styled.div`
     font-size: 17px;
     line-height: 27px;
     text-align: center;
-    color: var(--grey);
+    color: var(--black);
   }
 `;
 

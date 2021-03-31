@@ -57,7 +57,7 @@ export default function NavBar() {
           <a>Home</a>
         </Link>
         <Link href="/about">
-          <a>About</a>
+          <a>Blog</a>
         </Link>
       </ul>
     </NavStyles>
