@@ -25,7 +25,7 @@ const FooterContainer = styled.footer`
     }
   }
   a:hover {
-    color: var(--white);
+    color: var(--mainActive);
   }
 `;
 

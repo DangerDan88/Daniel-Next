@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
 html,body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+    background-image: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
     font-family: var(--fontFamily);
     color: var(--white);
 } 

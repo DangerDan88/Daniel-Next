@@ -7,9 +7,9 @@ const NavStyles = styled.nav`
   font-family: var(--fontFamily);
   background-image: linear-gradient(
     to right,
-    rgb(18, 194, 233),
-    rgb(196, 113, 237),
-    rgb(246, 79, 89)
+    rgb(15, 12, 41),
+    rgb(48, 43, 99),
+    rgb(36, 36, 62)
   );
   ul {
     list-style: none;
@@ -27,12 +27,12 @@ const NavStyles = styled.nav`
     text-decoration: none;
     font-size: x-large;
     &:active {
-      box-shadow: 0 2px 0 var(--main);
+      box-shadow: 0 2px 0 var(--mainActive);
       opacity: 1;
     }
   }
   a:hover {
-    color: var(--white);
+    color: var(--mainActive);
   }
 
   .port {

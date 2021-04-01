@@ -1,5 +1,5 @@
 import React from "react";
-//import Link from "next/link";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Image from "next/image";
 
@@ -37,16 +37,15 @@ const MainProjectTextStyles = styled.div`
     font-size: 17px;
     line-height: 27px;
     text-align: center;
-    color: var(--black);
+    color: var(--grey);
   }
 `;
 
 const ProjectLinkStyle = styled.a`
   a {
     list-style: none;
-    color: var(--main);
+    color: var(--grey);
     text-decoration: none;
-    //TODO fix hover style active state for nav links next doesnt read active state from anchor tag need to use next/router i think and figure out footer for every page
     &:active {
       box-shadow: 0 2px 0 var(--main);
       opacity: 1;
@@ -62,12 +61,14 @@ export default function Projects() {
     <div>
       <MainHeadingStyles>Projects</MainHeadingStyles>
       <ProjectImageContainerStyles>
-        <Image
-          src="/images/macsketch.png"
-          alt="Picture of the author"
-          width={400}
-          height={400}
-        />
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Image
+            src="/images/macsketch.png"
+            alt="Picture of the author"
+            width={400}
+            height={400}
+          />
+        </motion.div>
       </ProjectImageContainerStyles>
       <MainProjectTextStyles>
         <h1>GPH Equestrian</h1>
@@ -83,12 +84,14 @@ export default function Projects() {
         </ProjectLinkStyle>
       </MainProjectTextStyles>
       <ProjectImageContainerStyles>
-        <Image
-          src="/images/macsketch2.png"
-          alt="Picture of the author"
-          width={400}
-          height={400}
-        />
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Image
+            src="/images/macsketch2.png"
+            alt="Picture of the author"
+            width={400}
+            height={400}
+          />
+        </motion.div>
       </ProjectImageContainerStyles>
       <MainProjectTextStyles>
         <h1>LearnBuildType</h1>
