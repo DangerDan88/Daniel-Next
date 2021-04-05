@@ -5,12 +5,7 @@ import Image from "next/image";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
-  background-image: linear-gradient(
-    to right,
-    rgb(15, 12, 41),
-    rgb(48, 43, 99),
-    rgb(36, 36, 62)
-  );
+  background-image: var(--main-bg-color);
   ul {
     list-style: none;
     display: flex;
@@ -23,7 +18,7 @@ const NavStyles = styled.nav`
   }
   a {
     list-style: none;
-    color: var(--grey);
+    color: var(--black);
     text-decoration: none;
     font-size: x-large;
     &:active {

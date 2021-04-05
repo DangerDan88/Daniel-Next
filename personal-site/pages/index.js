@@ -2,14 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
 import Projects from "../components/Projects";
-
-const MainHeadingStyles = styled.div`
-  display: flex;
-  justify-content: center;
-  max-width: var(--siteWidth);
-  margin: 0 auto;
-  padding: 0 15px;
-`;
+import { MainHeadingStyles } from "../styles/reusable";
 
 const MainTextStyles = styled.div`
   display: flex;
@@ -18,7 +11,7 @@ const MainTextStyles = styled.div`
   margin: 0 auto;
   p {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 24px;
     line-height: 27px;
     text-align: center;
     color: var(--white);
@@ -63,8 +56,11 @@ export default function Home() {
         </p>
       </MainTextStyles>
       <MainTextStyles>
-        <ButtonStyles>
-          <Link href="/about">More about me</Link>
+        <ButtonStyles className="pushable">
+          <span className="front">
+            {" "}
+            <Link href="/about">More about me</Link>
+          </span>
         </ButtonStyles>
       </MainTextStyles>
       <Projects />

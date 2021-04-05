@@ -1,13 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { ThemeProvider } from "styled-components";
-import useTheme from "../components/hooks/useTheme";
-import { lightTheme, darkTheme } from "../styles/Theme";
 
 const GlobalStyles = createGlobalStyle`
 :root {
     --main: #1f004d;
+    --main-bg-color: linear-gradient(to right, rgb(86, 20, 176), rgb(219, 214, 92));
     --mainActive: #99b3ff;
     --black: #161515;
     --white: #fff;
@@ -21,24 +19,19 @@ const GlobalStyles = createGlobalStyle`
 html,body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+    background-image: var(--main-bg-color);
     font-family: var(--fontFamily);
     color: var(--white);
 } 
 `;
 
 function MyApp({ Component, pageProps }) {
-  const [theme, toggleTheme] = useTheme();
-  const currentTheme = theme === "light" ? lightTheme : darkTheme;
-
   return (
     <>
-      <ThemeProvider theme={currentTheme}>
-        <GlobalStyles />
-        <NavBar toggleTheme={toggleTheme} />
-        <Component {...pageProps} />
-        <Footer />
-      </ThemeProvider>
+      <GlobalStyles />
+      <NavBar />
+      <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

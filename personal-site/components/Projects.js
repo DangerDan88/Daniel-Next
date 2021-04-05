@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import Image from "next/image";
+import { MainHeadingStyles } from "../styles/reusable";
 
 const ProjectImageContainerStyles = styled.div`
   display: flex;
@@ -13,18 +14,6 @@ const ProjectImageContainerStyles = styled.div`
   img {
     border-radius: 25px;
   }
-`;
-
-const MainHeadingStyles = styled.div`
-  display: flex;
-  justify-content: center;
-  max-width: var(--siteWidth);
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 2rem;
-  padding-bottom: 2rem;
-  padding-top: 8rem;
-  color: var(--white);
 `;
 
 const MainProjectTextStyles = styled.div`
@@ -61,12 +50,12 @@ export default function Projects() {
     <div>
       <MainHeadingStyles>Projects</MainHeadingStyles>
       <ProjectImageContainerStyles>
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }}>
           <Image
             src="/images/macsketch.png"
             alt="Picture of the author"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
         </motion.div>
       </ProjectImageContainerStyles>
@@ -88,8 +77,8 @@ export default function Projects() {
           <Image
             src="/images/macsketch2.png"
             alt="Picture of the author"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
         </motion.div>
       </ProjectImageContainerStyles>
