@@ -20,7 +20,8 @@ const NavStyles = styled.nav`
     list-style: none;
     color: var(--black);
     text-decoration: none;
-    font-size: x-large;
+    font-size: larger;
+    font-weight: bold;
     &:active {
       box-shadow: 0 2px 0 var(--mainActive);
       opacity: 1;
@@ -43,8 +44,8 @@ export default function NavBar() {
           <Image
             src="/images/portpic.jpeg"
             alt="port pic"
-            height={60}
-            width={60}
+            height={70}
+            width={70}
             className="port"
           />
         </li>
@@ -52,7 +53,7 @@ export default function NavBar() {
           <a>Home</a>
         </Link>
         <Link href="/about">
-          <a>Blog</a>
+          <a>About</a>
         </Link>
       </ul>
     </NavStyles>

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-//transform: skew(10deg, 10deg);
 
 const FooterContainer = styled.footer`
   ul {
