@@ -12,7 +12,7 @@ const ImageStyles = styled.div`
   }
 `;
 
-const ContentStyles = styled.div`
+const ContainerStyles = styled.div`
   display: block;
   justify-content: center;
   padding-top: 2rem;
@@ -53,8 +53,8 @@ export default function About() {
           width={300}
         />
       </ImageStyles>
-      <ContentStyles>
-        <div className="container">
+      <ContainerStyles>
+        <main className="container">
           <p>
             Hello my name is Daniel Osornio I am a Full-Stack developer from
             Salt Lake City, Utah 🏔️
@@ -82,8 +82,8 @@ export default function About() {
               <a href="mailto:dangerdan808@gmail.com">Contact me</a>
             </ButtonStyles>
           </p>
-        </div>
-      </ContentStyles>
+        </main>
+      </ContainerStyles>
     </div>
   );
 }

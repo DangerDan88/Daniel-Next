@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 const FooterContainer = styled.footer`
   ul {
@@ -33,20 +34,45 @@ export default function Footer() {
     <FooterContainer>
       <ul>
         <li>
-          <a href="https://github.com/DangerDan88">Github</a>
+          <a href="https://github.com/DangerDan88" target="_blank">
+            <Image
+              src="/images/Octocat.png"
+              alt="github logo"
+              height={50}
+              width={50}
+            />
+          </a>
         </li>
-
         <li>
           <a href="https://www.linkedin.com/in/daniel-osornio-837547188/">
-            LinkedIn
+            <Image
+              src="/images/linkedin.png"
+              alt="linked in"
+              height={50}
+              width={50}
+            />
           </a>
         </li>
 
         <li>
-          <a href="#">Twitter</a>
+          <a href="#">
+            <Image
+              src="/images/twitter.png"
+              alt="twitter icon"
+              height={50}
+              width={50}
+            />
+          </a>
         </li>
         <li>
-          <a href="mailto:dangerdan808@gmail.com">Contact</a>
+          <a href="mailto:dangerdan808@gmail.com">
+            <Image
+              src="/images/gmail.png"
+              alt="gmail icon"
+              height={50}
+              width={50}
+            />
+          </a>
         </li>
       </ul>
     </FooterContainer>
