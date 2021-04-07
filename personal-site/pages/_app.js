@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-    --main: #1f004d;
+    --accent-color: #1f004d;
     --main-bg-color: linear-gradient(to right, rgb(86, 20, 176), rgb(219, 214, 92));
     --mainActive: #ffd700;
     --black: #161515;
@@ -13,7 +13,6 @@ const GlobalStyles = createGlobalStyle`
     --fontFamily: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
     --siteWidth: 77ch;
-    --accent-color:  #e16365;
 }
 
 html,body {

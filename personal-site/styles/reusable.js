@@ -9,7 +9,7 @@ export const MainHeadingStyles = styled.div`
   font-size: 2rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  color: var(--white);
+  color: var(--main);
 `;
 
 export const ButtonStyles = styled.button`
@@ -31,4 +31,8 @@ export const ButtonStyles = styled.button`
     color: var(--white);
     text-decoration: none;
   }
+`;
+
+export const Accent = styled.span`
+  color: var(--accent-color);
 `;

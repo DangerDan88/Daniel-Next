@@ -2,7 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
 import Projects from "../components/Projects";
-import { MainHeadingStyles, ButtonStyles } from "../styles/reusable";
+import { MainHeadingStyles, ButtonStyles, Accent } from "../styles/reusable";
 
 const MainTextStyles = styled.div`
   display: flex;
@@ -26,7 +26,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainHeadingStyles>
-        <h1>Welcome, My name is Daniel.</h1>
+        <h1>
+          Welcome, My name is <Accent>Daniel.</Accent>
+        </h1>
       </MainHeadingStyles>
       <MainTextStyles>
         <p>
