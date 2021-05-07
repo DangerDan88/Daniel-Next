@@ -1,24 +1,40 @@
-import { useEffect } from "react";
 import axios from "axios";
+import { ButtonStyles } from "../styles/reusable";
+import { useState } from "react";
 
-//todo api request failing with 404 I think it has to do with the url having local host attached works in postman without that local host part
-
+//todo got data to to generate need to template it out into a card and figure out api key not working in env variables
+//todo want to make an icon where you click and weather card is generated with key stats
 const WeatherWidget = () => {
-  useEffect(() => {
-    axios(
-      "api.openweathermap.org/data/2.5/weather?q=London&appid=127c4e3c16ae1e9d22ad527bfe38537a"
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data))
+  const [weather, setWeather] = useState("");
+
+  const getWeather = async function () {
+    await axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?q=Herriman&units=imperial&appid=${process.env.KEY}`
+      )
+      .then((response) => {
+        let weatherTemp = response.data.main.temp;
+        let des = response.data.weather[0].description;
+        let feelsLike = response.data.main.feels_like;
+        setWeather(weather);
+        console.log(feelsLike);
+        console.log(des);
+        console.log(weatherTemp);
+
+        // console.log(response.data.list.[1]);
+      })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  };
+
+  //useEffect(() => {
+  //  getWeather();
+  // }, []);
 
   return (
     <div>
-      <h1>Weather widget</h1>
-      <button>push for weather</button>
+      <ButtonStyles onClick={getWeather}>push for weather</ButtonStyles>
     </div>
   );
 };

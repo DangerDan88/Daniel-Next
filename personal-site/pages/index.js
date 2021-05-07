@@ -2,7 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
 import Projects from "../components/Projects";
-//import WeatherWidget from "../components/WeatherWidget";
+import WeatherWidget from "../components/WeatherWidget";
 import { MainHeadingStyles, ButtonStyles, Accent } from "../styles/reusable";
 
 const MainTextStyles = styled.div`
@@ -33,7 +33,7 @@ export default function Home() {
       </MainHeadingStyles>
       <MainTextStyles>
         <p>
-          I'm a freelance web developer. Open to work this is my personal site
+          I'm a freelance web developer. Open to work, this is my personal site
           where you'll find projects ive worked on and current stuff i'm
           learning.
         </p>
@@ -44,6 +44,7 @@ export default function Home() {
             <Link href="/about">More about me</Link>
           </span>
         </ButtonStyles>
+        <WeatherWidget />
       </MainTextStyles>
       <Projects />
     </div>
