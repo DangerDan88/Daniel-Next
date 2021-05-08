@@ -1,9 +1,7 @@
 import axios from "axios";
-import { ButtonStyles } from "../styles/reusable";
-import { useState } from "react";
-
-//todo got data to to generate need to template it out into a card and figure out api key not working in env variables
-//todo want to make an icon where you click and weather card is generated with key stats
+import { useState, useEffect } from "react";
+import { FaSun } from "react-icons/fa";
+//todo pass down data as props to a display component
 const WeatherWidget = () => {
   const [weather, setWeather] = useState("");
 
@@ -28,13 +26,13 @@ const WeatherWidget = () => {
       });
   };
 
-  //useEffect(() => {
-  //  getWeather();
-  // }, []);
+  useEffect(() => {
+    getWeather();
+  }, []);
 
   return (
     <div>
-      <ButtonStyles onClick={getWeather}>push for weather</ButtonStyles>
+      <FaSun onClick={getWeather} size={24} />
     </div>
   );
 };

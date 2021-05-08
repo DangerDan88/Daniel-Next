@@ -1,1 +1,1 @@
-## next js personal site just playing around
+## next js personal site

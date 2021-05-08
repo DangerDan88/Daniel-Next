@@ -2,7 +2,6 @@ import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
 import Projects from "../components/Projects";
-import WeatherWidget from "../components/WeatherWidget";
 import { MainHeadingStyles, ButtonStyles, Accent } from "../styles/reusable";
 
 const MainTextStyles = styled.div`
@@ -44,7 +43,6 @@ export default function Home() {
             <Link href="/about">More about me</Link>
           </span>
         </ButtonStyles>
-        <WeatherWidget />
       </MainTextStyles>
       <Projects />
     </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
+import WeatherWidget from "../components/WeatherWidget";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
@@ -54,6 +55,9 @@ export default function NavBar() {
         <Link href="/about">
           <a>About</a>
         </Link>
+        <li>
+          <WeatherWidget />
+        </li>
       </ul>
     </NavStyles>
   );
