@@ -7,7 +7,7 @@ const NavStyles = styled.nav`
   font-family: var(--fontFamily);
   background-image: var(--main-bg-color);
   ul {
-    list-style: none;
+    // list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
