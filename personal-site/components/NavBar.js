@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
-import WeatherWidget from "../components/WeatherWidget";
+//import WeatherWidget from "../components/WeatherWidget";
 
 const NavStyles = styled.nav`
   font-family: var(--fontFamily);
@@ -15,6 +15,9 @@ const NavStyles = styled.nav`
     margin: 0 auto;
     padding: 10px 15px;
     max-width: 1000px;
+  }
+  li {
+    list-style: none;
   }
   a {
     list-style: none;
@@ -55,9 +58,6 @@ export default function NavBar() {
         <Link href="/about">
           <a>About</a>
         </Link>
-        <li>
-          <WeatherWidget />
-        </li>
       </ul>
     </NavStyles>
   );
